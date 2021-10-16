@@ -1,0 +1,42 @@
+body{
+  background-color: black;
+  background-image: url("Assets/bgimage.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+#buttonisland{
+  background-color: #3a9435;
+  margin: 30vh 20vw;
+  padding: 10vh 10vw 10vh 10vw;
+  border-radius: 9px;
+  z-index: 1
+  top: 0vh;
+}
+
+
+button{
+  border-radius: 9px;
+  padding: 1vh 3vw;
+  float: right;
+  display: block;
+  margin-top: 1vh;
+}
+
+button:hover{
+  border: *fff solid 1px;
+}
+button:active{
+  color: grey;
+}
+
+
+img{
+  width: 100vw;
+
+}
+
+h1{
+  font-family: fantasy;
+  font-weight: 700;
+  text-align: center;
+}

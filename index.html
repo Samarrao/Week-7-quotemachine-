@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Feel so clean like a Quote Machine</title>
+    <link rel = "stylesheet" href= "style.css">
+  </head>
+  <body>
+
+
+
+
+<section id = "buttonisland">
+    <h1 id="qtext">Welcome to the quote machine (I've never watched Monty Python, but apparently it's funny).</h1>
+    <button id= "quotebutton">New Quote</button>
+    </section>
+
+
+
+<script>
+
+console.log("bruh");
+
+const quotes = ["Strange women lying in ponds distributing swords is no basis for a system of government.", "'Tis but a scratch", "There Are Those Who Call Me...Tim.", "Your Mother Was A Hamster And Your Father Smelt Of Elderberries!", "And The Lord Did Grin.", "Are you suggesting coconuts migrate?", "We dine well here in Camelot. We eat ham and jam and spam a lot.", "Don’t like her? What’s wrong with her? She’s beautiful. She’s rich. She’s got huge…tracts of land"];
+console.log(quotes[7]); /*Computer always start counting from zero, so you can call a specific one by typing in a number .length does all of it Ig*/
+
+
+let quotecount = 0;
+
+document.getElementById("quotebutton").addEventListener("click", buttonClicked);
+
+function buttonClicked(){
+  console.log(quotes[quotecount]);
+  document.getElementById("qtext").innerHTML = quotes[quotecount]
+
+  if(quotecount>6){
+    quotecount = 0;
+  }else{
+  quotecount += 1;
+}
+}
+  </script>
+  </body>
+</html>
